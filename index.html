@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Evolution</title>
+	<meta charset="UTF-8" />
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+</head>
+
+<body>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap');
+
+		html, body {
+			width: 100%;
+			margin: 0;
+		}
+
+		#app {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			font-family: 'IBM Plex Mono';
+		}
+
+		.btn-panel {
+			margin-top: ;
+		}
+
+		a {
+			cursor: pointer;
+			transition: 0.1s ease-in-out;
+			border-radius: 2px;
+		}
+
+		a:hover {
+			color: #fff;
+			background-color: #0070F3
+		}
+	</style>
+	<div id="app">
+		<div>
+			<h1>Evolution</h1>
+			<div>
+				<p>Tick: <span id="tick"></span></p>
+				<p>Temp: <span id="temp"></span></p>
+				<p>Water: <span id="water"></span></p>
+				<div id="orgs"></div>
+			</div>
+			<div class="btn-panel">
+				<a onclick="location.reload()">Reload</a>
+			</div>
+		</div>
+	</div>
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
