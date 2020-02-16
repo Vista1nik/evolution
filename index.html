@@ -25,7 +25,11 @@
 		}
 
 		.btn-panel {
-			margin-top: ;
+			margin-top: 12px;
+		}
+
+		.copyright {
+			color: #999;
 		}
 
 		a {
@@ -42,15 +46,19 @@
 	<div id="app">
 		<div>
 			<h1>Evolution</h1>
+			<p>A little life simulator.</p>
 			<div>
 				<p>Tick: <span id="tick"></span></p>
 				<p>Temp: <span id="temp"></span></p>
 				<p>Water: <span id="water"></span></p>
+				<hr>
 				<div id="orgs"></div>
+				<hr>
 			</div>
 			<div class="btn-panel">
 				<a onclick="location.reload()">Reload</a>
 			</div>
+			<p class="copyright">2020 (c) vista1nik</p>
 		</div>
 	</div>
 	<script src="src/index.js">
