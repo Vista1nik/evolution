@@ -13,15 +13,26 @@
 		@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap');
 
 		html, body {
-			width: 100%;
 			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		canvas { display: block; }
+
+		hr {
+			border-color: #fff;
 		}
 
 		#app {
-			display: flex;
-			justify-content: center;
-			width: 100%;
+			margin: 12px;
 			font-family: 'IBM Plex Mono';
+			position: absolute;
+			z-index: 999;
+		}
+
+		.render {
+
 		}
 
 		.btn-panel {
@@ -36,6 +47,7 @@
 			cursor: pointer;
 			transition: 0.1s ease-in-out;
 			border-radius: 2px;
+			margin-right: 12px;
 		}
 
 		a:hover {
@@ -51,17 +63,20 @@
 				<p>Tick: <span id="tick"></span></p>
 				<p>Temp: <span id="temp"></span></p>
 				<p>Water: <span id="water"></span></p>
+				<p>Press "Enter" to create a new organism.</p>
+				<div class="btn-panel">
+					<a onclick="location.reload()">Reload</a>
+				</div>
 				<hr>
 				<div id="orgs"></div>
 				<hr>
 			</div>
-			<div class="btn-panel">
-				<a onclick="location.reload()">Reload</a>
-			</div>
 			<p class="copyright">2020 (c) vista1nik</p>
 		</div>
 	</div>
-	<script src="src/index.js">
+	<div class="render"></div>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.113.2/build/three.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/three@0.97.0/examples/js/controls/OrbitControls.js"></script>	<script src="src/index.js">
 	</script>
 </body>
 
